@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "CustList";
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+<h2>Customer Names are :@ViewBag.CustList.Count</h2>
+@foreach (var Cust in ViewBag.CustList)
+{
+    <ul><li>@Cust</li></ul>
+}
+
